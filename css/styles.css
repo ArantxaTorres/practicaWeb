@@ -1,0 +1,335 @@
+body {
+
+/*eliminamos márgenes por defecto*/
+    margin: 0%;
+
+    font-family: fantasy;
+    background-image: url(../images/motivo.jpg);
+    text-decoration: none;
+}
+
+.header, .contenido, .post, .footer {
+
+    padding: 1em 2em;
+
+
+}
+#logo {
+    flex-direction: row;
+    justify-content: flex-start;
+    display: flex;
+    }
+
+.contenido, .post, .footer {
+
+    float: left;
+    box-sizing: border-box;
+
+}
+
+.encabezado {
+
+    background-color: #BF9E87;
+    height: 100%;
+}
+
+.soporte {
+
+    width: 100%;
+}
+
+
+span {
+
+    font-weight: bolder;
+}
+
+
+.menuitem {
+    margin: 8px;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 20px;
+    border-bottom: 3px solid rgb(129, 95, 70);
+    cursor: pointer;
+    
+}
+
+.contenido {
+
+    width: 60%;
+    
+
+}
+
+.post {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    width: 20%;
+    padding: 5px;
+    margin: 0005px;
+    
+
+    background-color: #f9dbdb;
+    border: 6px solid #e9b3b3;
+}
+
+
+
+
+
+
+.footer {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    background-color: rgb(231, 231, 231);
+    border: 1px solid black;
+    font-size: 0.9em; 
+}
+
+
+
+
+.field {
+
+
+    flex-direction: row;
+    display: flex;
+    position: relative;
+    margin:3px auto;
+ 
+    box-shadow:
+   1px 1px 0 rgb(158, 81, 158),
+   2px 2px 0 rgb(158, 81, 158),
+   3px 3px 0 rgb(158, 81, 158),
+   4px 4px 0 rgb(158, 81, 158),
+   5px 5px 0 rgb(158, 81, 158),
+   6px 6px 0 rgb(158, 81, 158),
+   7px 7px 0 rgb(158, 81, 158);
+}
+
+.field>input[type=text],
+.field>button {
+  display:block;
+}
+
+.field>input[type=text] {
+  flex:1;
+  padding:0.6em;
+  border:0.2em solid rgb(221, 160, 221);
+}
+
+.field>button {
+  padding:0.6em 0.8em;
+  background-color:rgb(221, 160, 221);
+  color:white;
+  border:none;
+}
+
+    
+    
+    
+
+
+
+
+@media screen and (min-width: 1080px) and (max-width: 1920px){
+    /*DESKTOP*/
+
+    .header {
+        
+        background-color: #BF9E87;
+    }
+
+    .contenido, .post {
+
+        width: 100%;
+    }
+
+
+
+    .menuitem {
+
+        width: 20%;
+       
+
+    }
+
+    .contenido {
+
+        background-color: rgb(221, 160, 221);
+    }
+
+    
+    
+
+    .footer {
+        width: 100%;
+        background-color: #BF9E87;
+       
+        
+    }
+
+    .field {
+
+       width: 20%;
+       flex: start flex;
+        
+    }
+    
+}
+
+
+
+
+
+@media screen and (min-width: 780px) and (max-width: 1024px) and (min-width: 1024px) and (max-width: 1366px) {
+
+/* IPAD PRO*/
+    .header {
+        
+        background-color: #BF9E87;
+    }
+
+    .contenido, .post {
+
+        width: 100%;
+    }
+
+
+
+    .menuitem {
+
+        width: 20%;
+       
+
+    }
+
+    .contenido {
+
+        background-color: plum;
+    }
+
+
+    
+    
+
+
+
+    .footer {
+        width: 100%;
+        background-color: #BF9E87;
+       
+        
+    }
+
+    .field {
+
+        width: 70%;
+    }
+    
+}
+
+
+
+@media screen and (min-width: 480px) and (max-width: 780px) {
+
+/*   IPAD   */
+    .header {
+
+        background-color: #BF9E87;
+    }
+
+    .contenido, .post {
+
+        width: 100%;
+      
+    }
+
+    .contenido {
+
+        background-color: plum;
+    }
+
+    .menuitem {
+
+        width: 20%;
+       
+
+    }
+
+
+
+    
+    .footer {
+        width: 100%;
+        background-color: #BF9E87;
+       
+        
+    }
+
+    .field {
+
+        width: 30%;
+    }
+
+   
+}
+
+
+
+
+@media screen and (max-width: 667px) and (min-width: 375px) {
+
+    /* IPHONE 7, 7 PLUS, 8, 8 PLUS */
+
+
+    .header {
+        height: 90%;
+        background-color: #BF9E87;
+    }
+
+
+
+    .menuitem {
+
+        width: 90%;
+        
+}
+
+    .contenido {
+
+        background-color: plum;
+    }
+
+    .contenido, .post {
+
+        width: 100%;
+    }
+  
+    
+    .post {
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    
+    .footer {
+        font-size: 1em;
+        background-color: #BF9E87;
+    
+        }
+    
+        
+}
+
+
+
+
+    
+
